@@ -1,0 +1,52 @@
+{{ define "main" }}
+{{- $start := time.AsTime .Params.event_start -}}
+{{- $end := time.AsTime .Params.event_end -}}
+<article class="post-single event-single">
+  <header class="post-header">
+    <h1 class="post-title">{{ .Title }}</h1>
+    <dl class="event-details">
+      <div>
+        <dt>Date</dt>
+        <dd>
+          <time datetime="{{ .Params.event_start }}">{{ $start.Format "2 January 2006" }}</time>
+          {{ if ne ($start.Format "2006-01-02") ($end.Format "2006-01-02") }}
+            - <time datetime="{{ .Params.event_end }}">{{ $end.Format "2 January 2006" }}</time>
+          {{ end }}
+        </dd>
+      </div>
+      {{ if not .Params.all_day }}
+      <div>
+        <dt>Time</dt>
+        <dd>{{ $start.Format "15:04" }}-{{ $end.Format "15:04" }} {{ .Params.timezone }}</dd>
+      </div>
+      {{ else }}
+      <div>
+        <dt>Time</dt>
+        <dd>All day {{ .Params.timezone }}</dd>
+      </div>
+      {{ end }}
+      {{ with .Params.organizer }}
+      <div>
+        <dt>Organizer</dt>
+        <dd>{{ . }}</dd>
+      </div>
+      {{ end }}
+      {{ with .Params.cost }}
+      <div>
+        <dt>Cost</dt>
+        <dd>{{ . }}</dd>
+      </div>
+      {{ end }}
+      {{ with .Params.event_url }}
+      <div>
+        <dt>Link</dt>
+        <dd><a href="{{ . }}">Event website</a></dd>
+      </div>
+      {{ end }}
+    </dl>
+  </header>
+  <div class="post-content md-content">
+    {{ .Content }}
+  </div>
+</article>
+{{ end }}

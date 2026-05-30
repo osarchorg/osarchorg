@@ -1,0 +1,9 @@
+{{- $tags := site.Taxonomies.tags -}}
+{{- if $tags }}
+<ul class="post-tags tag-feeds">
+  {{- range $tags.Alphabetical }}
+  {{- $path := printf "/tags/%s/" (.Name | urlize) }}
+  <li><a href="{{ $path | relURL }}">{{ .Page.Title }} ({{ .Count }})</a></li>
+  {{- end }}
+</ul>
+{{- end }}

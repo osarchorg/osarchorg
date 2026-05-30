@@ -1,0 +1,88 @@
+theme = "PaperMod"
+baseURL = "https://osarch.org/"
+languageCode = "en-us"
+title = "OSArch"
+timeZone = "Europe/London"
+summaryLength = 35
+copyright = "Except where otherwise noted, content on this site is licensed under CC BY 4.0."
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+[mediaTypes."text/calendar"]
+  suffixes = ["ics"]
+
+[outputFormats.Calendar]
+  mediaType = "text/calendar"
+  baseName = "calendar"
+  isPlainText = true
+  notAlternative = true
+
+[params]
+  defaultTheme = "light"
+  disableThemeToggle = true
+  ShowReadingTime = true
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = false
+  ShowCodeCopyButtons = true
+  ShowRssButtonInSectionTermList = true
+  ShowPageNums = true
+  mainSections = ["posts"]
+
+  [params.label]
+    text = ""
+    icon = "/logo.png"
+    iconHeight = 32
+
+  [params.homeInfoParams]
+    Title = "Welcome to the OSArch Community"
+    Content = "This is a news source for architects, engineers, builders, planners, and professionals interested in free software for the built environment.\n\nAll news is community submitted and curated. If you've got news or an event, please let us know in the [forum](https://community.osarch.org/) or [chat](/chat/), and we'd love to publish it, or better yet, you can become a publisher too!"
+
+  [params.footer]
+    text = "[Wiki](https://wiki.osarch.org/) · [Community](https://community.osarch.org/) · [Live Chat](/chat/) · [Donate](https://opencollective.com/osarch)"
+
+  [params.cover]
+    hiddenInSingle = false
+    hiddenInList = false
+    linkFullImages = true
+
+[[menu.main]]
+  name = "News"
+  url = "/"
+  weight = 5
+
+[[menu.main]]
+  name = "Events"
+  url = "/events/"
+  weight = 10
+
+[[menu.main]]
+  name = "Wiki"
+  url = "https://wiki.osarch.org/"
+  weight = 20
+
+[[menu.main]]
+  name = "Forum"
+  url = "https://community.osarch.org/"
+  weight = 30
+
+[[menu.main]]
+  name = "Chat"
+  url = "/chat/"
+  weight = 40
+
+[[menu.main]]
+  name = "Subscribe"
+  url = "/subscribe/"
+  weight = 60
+  params = { rss = true }
+
+[permalinks]
+  posts = "/:year/:month/:day/:slug/"
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+
+[markup.goldmark.renderer]
+  unsafe = true

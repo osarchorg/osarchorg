@@ -1,0 +1,40 @@
+{{ define "main" }}
+{{- $events := sort .Pages "Params.event_start_utc" "asc" -}}
+{{- $now := now.UTC.Format "2006-01-02T15:04:05Z07:00" -}}
+{{- $upcoming := where $events "Params.event_end_utc" "ge" $now -}}
+
+<header class="page-header events-header">
+  <h1>{{ .Title }}</h1>
+  <p><a href="{{ "events/calendar.ics" | absLangURL }}">Subscribe to the OSArch events calendar</a></p>
+</header>
+
+{{ with $upcoming }}
+<section class="events-section" aria-labelledby="upcoming-events">
+  <h2 id="upcoming-events">Upcoming Events</h2>
+  <ol class="event-list">
+    {{ range . }}
+      {{ partial "event_item.html" . }}
+    {{ end }}
+  </ol>
+</section>
+{{ end }}
+
+<section class="events-section" aria-labelledby="event-calendar">
+  <h2 id="event-calendar">Calendar</h2>
+  {{ range $events.GroupByParamDate "event_start" "January 2006" }}
+    <section class="event-month" aria-labelledby="{{ .Key | anchorize }}">
+      <h3 id="{{ .Key | anchorize }}">{{ .Key }}</h3>
+      <ol class="event-calendar-grid">
+        {{ range .Pages }}
+          {{ $start := time.AsTime .Params.event_start }}
+          <li>
+            <time datetime="{{ .Params.event_start }}">{{ $start.Format "2 Jan" }}</time>
+            <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+          </li>
+        {{ end }}
+      </ol>
+    </section>
+  {{ end }}
+</section>
+
+{{ end }}

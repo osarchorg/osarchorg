@@ -1,0 +1,23 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//OSArch//Events//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:OSArch Events
+X-WR-CALDESC:Events for the OSArch community
+{{ range sort .Pages "Params.event_start_utc" "asc" -}}
+{{- $start := time.AsTime .Params.event_start_utc -}}
+{{- $end := time.AsTime .Params.event_end_utc -}}
+{{- $stamp := time.AsTime .Date -}}
+BEGIN:VEVENT
+UID:{{ .Params.wordpress_id }}@osarch.org
+DTSTAMP:{{ $stamp.UTC.Format "20060102T150405Z" }}
+DTSTART:{{ $start.UTC.Format "20060102T150405Z" }}
+DTEND:{{ $end.UTC.Format "20060102T150405Z" }}
+SUMMARY:{{ replaceRE "[\\r\\n,;\\\\]" " " .Title }}
+URL:{{ .Params.event_url | default .Permalink }}
+DESCRIPTION:{{ replaceRE "[\\r\\n,;\\\\]" " " (.Summary | plainify) }}
+{{ with .Params.organizer }}ORGANIZER:{{ replaceRE "[\\r\\n,;\\\\]" " " . }}{{ end }}
+END:VEVENT
+{{ end -}}
+END:VCALENDAR

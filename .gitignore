@@ -1,0 +1,5 @@
+/.hugo_build.lock
+/public/
+/layouts.local-backup/
+__pycache__/
+*.py[cod]

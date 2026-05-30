@@ -1,0 +1,41 @@
+<header class="header">
+  <nav class="header-nav">
+    <div class="logo">
+      <a href="{{ "" | absLangURL }}" accesskey="h" title="{{ site.Title }} (Alt + H)">
+        {{- with site.Params.label.icon }}
+        <img src="{{ . | absURL }}" alt="{{ site.Title }}" height="{{ site.Params.label.iconHeight | default 32 }}">
+        {{- else }}
+        {{ site.Title }}
+        {{- end }}
+      </a>
+    </div>
+    <div class="nav-bar">
+      {{- $currentPage := . }}
+      <ul id="menu" class="menu">
+        {{- range site.Menus.main }}
+        {{- $menu_item_url := (cond (strings.HasSuffix .URL "/") .URL (printf "%s/" .URL) ) | absLangURL }}
+        {{- $page_url := $currentPage.Permalink | absLangURL }}
+        <li>
+          <a href="{{ .URL | absLangURL }}" title="{{ .Title | default .Name }}">
+            <span {{- if eq $menu_item_url $page_url }} class="active" {{- end }}>
+              {{ .Name }}
+              {{- if .Params.rss -}}
+              <svg class="nav-rss-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M4 11a9 9 0 0 1 9 9" />
+                <path d="M4 4a16 16 0 0 1 16 16" />
+                <circle cx="5" cy="19" r="1" />
+              </svg>
+              {{- end -}}
+            </span>
+          </a>
+        </li>
+        {{- end }}
+      </ul>
+      <form class="nav-search" action="{{ "search/" | absLangURL }}" method="get" role="search">
+        <input type="search" name="q" aria-label="Search" placeholder="Search" autocomplete="off">
+        <input type="submit" value="Search">
+      </form>
+    </div>
+  </nav>
+</header>

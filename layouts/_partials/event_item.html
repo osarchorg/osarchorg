@@ -1,0 +1,20 @@
+{{- $start := time.AsTime .Params.event_start -}}
+{{- $end := time.AsTime .Params.event_end -}}
+<li class="event-item">
+  <time class="event-date" datetime="{{ .Params.event_start }}">
+    <span>{{ $start.Format "2" }}</span>
+    <small>{{ $start.Format "Jan 2006" }}</small>
+  </time>
+  <div class="event-summary">
+    <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+    <p class="event-meta">
+      {{ if .Params.all_day }}
+        All day {{ .Params.timezone }}
+      {{ else }}
+        {{ $start.Format "15:04" }}-{{ $end.Format "15:04" }} {{ .Params.timezone }}
+      {{ end }}
+      {{ with .Params.event_url }} · <a href="{{ . }}">Event website</a>{{ end }}
+    </p>
+    {{ with .Summary }}<p>{{ . | plainify }}</p>{{ end }}
+  </div>
+</li>

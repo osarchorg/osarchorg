@@ -1,0 +1,7 @@
+{{- with site.Params.homeInfoParams }}
+<div class="home-intro">
+  <p>Welcome to the <strong>OSArch Community</strong></p>
+  {{ $opts := dict "display" "block" }}
+  {{ .Content | $.Page.RenderString $opts }}
+</div>
+{{- end -}}
