@@ -36,7 +36,7 @@ copyright = "Except where otherwise noted, content on this site is licensed unde
 
   [params.homeInfoParams]
     Title = "Welcome to the OSArch Community"
-    Content = "This is a news source for architects, engineers, builders, planners, and professionals interested in free software for the built environment.\n\nAll news is community submitted and curated. If you've got news or an event, please let us know in the [forum](https://community.osarch.org/) or [chat](/chat/), and we'd love to publish it, or better yet, you can become a publisher too!"
+    Content = "This is a news source for architects, engineers, builders, planners, and professionals interested in free software for the built environment.\n\nAll news is community submitted and curated. If you've got news or an event, please let us know in the [forum](https://community.osarch.org/) or [chat](/chat/), and we'd love to publish it, or better yet, you can [become a publisher](https://github.com/osarchorg/osarchorg/) too!"
 
   [params.footer]
     text = "[Wiki](https://wiki.osarch.org/) · [Community](https://community.osarch.org/) · [Live Chat](/chat/) · [Donate](https://opencollective.com/osarch)"

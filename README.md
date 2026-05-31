@@ -38,6 +38,47 @@ Images and other static files live in:
 - `static/logo.png`
 - `static/favicon.ico`
 
+## News Sources
+
+OSArch monitors and aggregates news, releases, and events from community sources relevant to free software for the built environment. Common sources include:
+
+- [FreeCAD Blog](https://blog.freecad.org/)
+- [Speckle Events](https://speckle.systems/speckle-events/)
+- [Speckle Blog](https://speckle.systems/blog)
+- [OSArch Community](https://community.osarch.org/)
+- [That Open People](https://people.thatopen.com/)
+- [Blender News](https://www.blender.org/news/)
+
+## Images
+
+Use dated upload folders for images that belong to a specific post or event:
+
+```text
+static/uploads/YYYY/MM/lowercase-semantic-name-with-hyphens.jpg
+```
+
+Use `static/uploads/common/` for reusable images such as project logos, organisation logos, and other assets that may be referenced by multiple posts or events:
+
+```text
+static/uploads/common/blender-logo.png
+```
+
+Name image files with lowercase, semantic words separated by hyphens. Avoid spaces, underscores, generic names, and source filenames such as `image1.png`, `screenshot.png`, or `download.jpg`.
+
+Before committing images, resize them so the largest dimension is no more than 800px unless there is a specific reason to keep a larger source. Optimise images after resizing:
+
+```sh
+magick input.png -resize '800x800>' static/uploads/common/example-logo.png
+optipng -o2 static/uploads/common/example-logo.png
+```
+
+For JPEG images:
+
+```sh
+magick input.jpg -resize '800x800>' static/uploads/YYYY/MM/example-image.jpg
+jpegoptim --strip-all static/uploads/YYYY/MM/example-image.jpg
+```
+
 ## Adding A News Post
 
 Create a new Markdown file in `content/posts/`.
@@ -116,6 +157,7 @@ Tags should be used consistently so visitors can subscribe to topic-specific fee
 - FreeCAD
 - GIMP
 - Godot
+- IFClite
 - IfcOpenShell
 - Inkscape
 - Krita
