@@ -165,6 +165,7 @@ name in the post front matter.
 - FreeCAD
 - GIMP
 - Godot
+- Hippo3D
 - IFClite
 - IfcOpenShell
 - Inkscape
