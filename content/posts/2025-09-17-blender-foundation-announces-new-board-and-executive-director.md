@@ -6,7 +6,6 @@ slug: "blender-foundation-announces-new-board-and-executive-director"
 draft: false
 author: "Moult"
 description: "Ton Roosendaal will step down as Blender Foundation chairman and CEO on 1 January 2026, with Francesco Siddi taking over as executive director."
-categories: ["All Disciplines"]
 tags: ["Blender", "Architecture", "Structure", "Services", "Construction"]
 cover:
   image: "/uploads/common/blender-logo.png"

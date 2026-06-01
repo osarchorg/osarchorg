@@ -6,7 +6,6 @@ slug: "speckle-launches-autodesk-construction-cloud-integration"
 draft: false
 author: "Moult"
 description: "Speckle has launched an Autodesk Construction Cloud integration for Enterprise customers, syncing ACC model data into Speckle for analytics, dashboards, automation, and historical model insight."
-categories: ["All Disciplines"]
 tags: ["Speckle"]
 cover:
   image: "/uploads/2025/12/speckle-autodesk-construction-cloud-integration.jpg"

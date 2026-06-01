@@ -6,7 +6,6 @@ slug: "openbim-blenderbim-add-on-in-aec-magazine"
 draft: false
 author: "duncan"
 description: "AEC Magazine has published a 16 page special edition featuring IFC, OpenBIM, and Open source software like the BlenderBIM Add-on and IFC.JS."
-categories: ["All Disciplines"]
 tags: ["Bonsai", "IfcOpenShell", "ThatOpenPlatform", "Architecture", "Structure", "Services", "Construction"]
 wordpress_id: 2179
 wordpress_guid: "https://osarch.org/?p=2179"

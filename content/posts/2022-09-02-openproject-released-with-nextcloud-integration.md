@@ -6,7 +6,6 @@ slug: "openproject-released-with-nextcloud-integration"
 draft: false
 author: "Moult"
 description: "OpenProject now integrates with Nextcloud to allow documentation, schedules, and specifications to be linked to work packages."
-categories: ["All Disciplines"]
 tags: ["OpenProject", "Construction"]
 wordpress_id: 2907
 wordpress_guid: "https://osarch.org/?p=2907"

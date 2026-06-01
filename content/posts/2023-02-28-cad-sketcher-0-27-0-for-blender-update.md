@@ -6,7 +6,6 @@ slug: "cad-sketcher-0-27-0-for-blender-update"
 draft: false
 author: "Moult"
 description: "CAD Sketcher is a Blender add-on based on SolveSpace that lets you draw parametrically constrained CAD profiles, arcs, and circles."
-categories: ["All Disciplines"]
 tags: ["CAD Sketcher", "Blender"]
 wordpress_id: 5485
 wordpress_guid: "https://osarch.org/?p=5485"

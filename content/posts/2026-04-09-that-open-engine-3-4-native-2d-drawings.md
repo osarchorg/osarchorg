@@ -6,7 +6,6 @@ slug: "that-open-engine-3-4-native-2d-drawings"
 draft: false
 author: "Moult"
 description: "That Open Platform's Release 3.4.0 introduced browser-based technical drawing generation, annotation systems, DXF/PDF export, Paper Space, and Infinite Canvas components."
-categories: ["All Disciplines"]
 tags: ["ThatOpenPlatform"]
 cover:
   image: "/uploads/2026/04/that-open-engine-3-4-native-2d-drawings.png"

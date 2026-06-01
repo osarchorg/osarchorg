@@ -6,7 +6,6 @@ slug: "foss-development-for-the-aec-industry-highlights-from-the-fosdem-2021"
 draft: false
 author: "Bruno Perdigao"
 description: "In the last February 6th and 7th, took place the FOSDEM 2021, an event organized to promote the use of free and open source software."
-categories: ["All Disciplines"]
 tags: ["FreeCAD", "Architecture", "Structure", "Services"]
 wordpress_id: 548
 wordpress_guid: "https://osarch.org/?p=548"

@@ -98,7 +98,6 @@ date: "YYYY-MM-DD HH:MM:SS"
 draft: false
 author: "Author Name"
 description: "Short description for search engines, feeds, and social previews."
-categories: ["Architecture"]
 tags: ["Blender", "Sustainability"]
 cover:
   image: "/uploads/YYYY/MM/image-name.jpg"
@@ -109,6 +108,11 @@ cover:
 ```
 
 Write the post body in Markdown. Prefer Markdown syntax for headings, links, images, lists, tables, and emphasis. Use raw HTML only when Markdown cannot represent the content cleanly.
+
+If a post is written with AI assistance, keep it to a concise, fact-based summary
+of no more than three paragraphs. Reference the primary source directly. Do not
+add opinion or promotional language. Focus on the points of interest for the AEC
+industry and for free software users, contributors, and projects.
 
 ## Adding An Event
 
@@ -140,6 +144,10 @@ Write the event details in Markdown. Events are shown on the events page and inc
 ## Tags
 
 Tags should be used consistently so visitors can subscribe to topic-specific feeds.
+Do not invent new tags. Use only the Software Tags and Discipline Tags listed
+below, except when a post is about a software project that is not already listed:
+in that case, add the software name to the Software Tags list and use that exact
+name in the post front matter.
 
 ### Software Tags
 
@@ -168,6 +176,7 @@ Tags should be used consistently so visitors can subscribe to topic-specific fee
 - OpenProject
 - OpenSCAD
 - Open Source Ecology
+- pystran
 - QCAD
 - Radiance
 - Speckle

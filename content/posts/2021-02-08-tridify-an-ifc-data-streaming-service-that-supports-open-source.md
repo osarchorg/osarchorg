@@ -6,7 +6,6 @@ slug: "tridify-an-ifc-data-streaming-service-that-supports-open-source"
 draft: false
 author: "Bruno Perdigao"
 description: "Tridify is an IFC data streaming service that supports open source projects. With Tridify you can easily share and view IFC models in any web browser."
-categories: ["All Disciplines"]
 tags: ["IfcOpenShell", "BabylonJS"]
 wordpress_id: 516
 wordpress_guid: "https://osarch.org/?p=516"

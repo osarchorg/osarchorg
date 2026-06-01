@@ -6,7 +6,6 @@ slug: "open-pdf-studio-free-software-pdf-editor"
 draft: false
 author: "Moult"
 description: "Open PDF Studio is a new LGPL-3.0 PDF editor and annotator from the OpenAEC Foundation, with markup, measurement, redaction, page management, forms, printing, and export tools."
-categories: ["All Disciplines"]
 tags: []
 cover:
   image: "/uploads/2026/05/open-pdf-studio-main-view.jpg"

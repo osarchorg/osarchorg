@@ -6,7 +6,6 @@ slug: "freecad-open-science-design-contest-2026"
 draft: false
 author: "Moult"
 description: "The FreeCAD Project Association has launched its first community design contest, asking participants to design an open hardware pinch valve for open science projects."
-categories: ["All Disciplines"]
 tags: ["FreeCAD"]
 cover:
   image: "/uploads/2026/05/freecad-open-science-design-contest.png"

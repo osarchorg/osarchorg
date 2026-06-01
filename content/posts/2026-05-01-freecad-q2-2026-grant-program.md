@@ -6,7 +6,6 @@ slug: "freecad-q2-2026-grant-program"
 draft: false
 author: "Moult"
 description: "The FreeCAD Project Association has opened the second 2026 grant review wave, with a quarterly budget and a focus on documentation, testing, release cycle improvements, and ecosystem work."
-categories: ["All Disciplines"]
 tags: ["FreeCAD"]
 cover:
   image: "/uploads/2026/05/freecad-q2-2026-grant-program.png"

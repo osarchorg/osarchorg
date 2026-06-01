@@ -6,7 +6,6 @@ slug: "blender-5-1-released"
 draft: false
 author: "Moult"
 description: "Blender 5.1 has been released with performance and stability work across the pipeline, including Cycles speedups, Grease Pencil refinements, Geometry Nodes updates, and Video Sequencer improvements."
-categories: ["All Disciplines"]
 tags: ["Blender", "Architecture"]
 cover:
   image: "/uploads/2026/03/blender-5-1-release-splash.jpg"

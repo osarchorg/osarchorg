@@ -6,7 +6,6 @@ slug: "open-source-ecology-seed-eco-home-2-product-release"
 draft: false
 author: "Moult"
 description: "The Seed Eco-Home 2 is a highly sustainable open source design for anybody to build their own modular 1,000sf home for 50k in a week."
-categories: ["All Disciplines"]
 tags: ["Open Source Ecology", "FreeCAD", "Architecture", "Structure", "Services", "Sustainability"]
 wordpress_id: 1283
 wordpress_guid: "https://osarch.org/?p=1283"

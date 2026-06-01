@@ -6,7 +6,6 @@ slug: "freecad-0-20-released"
 draft: false
 author: "Moult"
 description: "FreeCAD 0.20 has been released with tree view improvements, multiple edit modes, section tool, documentation, new add-ons, and improved 2D BIM support."
-categories: ["All Disciplines"]
 tags: ["FreeCAD", "Architecture", "Structure", "Services"]
 wordpress_id: 2009
 wordpress_guid: "https://osarch.org/?p=2009"

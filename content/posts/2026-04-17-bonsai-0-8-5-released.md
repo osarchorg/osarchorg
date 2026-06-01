@@ -6,7 +6,6 @@ slug: "bonsai-0-8-5-released"
 draft: false
 author: "Moult"
 description: "Bonsai 0.8.5 has been released with 962 new features and fixes, including Blender 5.1 support, BonsaiPR, workflow upgrades, AI/MCP tooling, and IfcOpenShell core improvements."
-categories: ["All Disciplines"]
 tags: ["Bonsai", "IfcOpenShell", "Blender", "Architecture", "Structure", "Services", "Construction", "Operations"]
 cover:
   image: "/uploads/2026/04/bonsai-0-8-5-release.png"

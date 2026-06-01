@@ -6,7 +6,6 @@ slug: "babylonjs-5-0-release-makes-3d-web-apps-easier-than-ever"
 draft: false
 author: "Moult"
 description: "BabylonJS is an open source library to build 3D webapps. The 5.0 release includes WebGPU, cross platform native apps, performance profiler, GUI and more."
-categories: ["All Disciplines"]
 tags: ["BabylonJS"]
 wordpress_id: 1643
 wordpress_guid: "https://osarch.org/?p=1643"

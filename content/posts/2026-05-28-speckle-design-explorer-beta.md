@@ -6,7 +6,6 @@ slug: "speckle-design-explorer-beta"
 draft: false
 author: "Moult"
 description: "Speckle has launched Design Explorer beta, a Speckle Intelligence dashboard widget for browsing, comparing, and sharing Grasshopper design options from tagged model data."
-categories: ["All Disciplines"]
 tags: ["Speckle"]
 cover:
   image: "/uploads/2026/05/speckle-design-explorer-beta.jpg"

@@ -6,7 +6,6 @@ slug: "topologic-is-now-a-one-click-install-for-blender-sverchok"
 draft: false
 author: "Moult"
 description: "Topologic offers topological analysis of geometry in architecture. A new milestone release offers an easy install for Blender and Sverchok."
-categories: ["All Disciplines"]
 tags: ["Topologic", "Blender", "Sverchok", "Architecture"]
 wordpress_id: 857
 wordpress_guid: "https://osarch.org/?p=857"

@@ -6,7 +6,6 @@ slug: "xeolabs-releases-the-new-xeokit"
 draft: false
 author: "Bruno Perdigao"
 description: "Xeokit is an open source 3D graphics SDK for BIM development. They have recently released the new xeokit 1.8 with rendering improvements"
-categories: ["All Disciplines"]
 tags: ["Xeokit"]
 wordpress_id: 666
 wordpress_guid: "https://osarch.org/?p=666"

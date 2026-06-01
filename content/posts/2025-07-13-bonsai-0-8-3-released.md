@@ -6,7 +6,6 @@ slug: "bonsai-0-8-3-released"
 draft: false
 author: "Moult"
 description: "Bonsai 0.8.3 has been released with 770 new features and fixes, including Blender 4.5 support, bSDD improvements, IFC5D updates, and broader polish across Bonsai and IfcOpenShell."
-categories: ["All Disciplines"]
 tags: ["Bonsai", "IfcOpenShell", "Blender", "Architecture", "Structure", "Services", "Construction", "Operations"]
 cover:
   image: "/uploads/2025/07/bonsai-0-8-3-release.png"

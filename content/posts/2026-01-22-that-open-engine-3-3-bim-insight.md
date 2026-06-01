@@ -6,7 +6,6 @@ slug: "that-open-engine-3-3-bim-insight"
 draft: false
 author: "Moult"
 description: "That Open Platform's Release 3.3.0 introduced BIM-ready chart components and analytics workflows for Fragments, IDS, and BCF data."
-categories: ["All Disciplines"]
 tags: ["ThatOpenPlatform"]
 cover:
   image: "/uploads/2026/01/that-open-engine-3-3-bim-insight.png"

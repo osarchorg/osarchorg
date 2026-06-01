@@ -6,7 +6,6 @@ slug: "new-archipack-add-on-release-for-blender-2-91-on-v2-3-3"
 draft: false
 author: "Bruno Perdigao"
 description: "Archipack has now a new release which is compatible with Blender 2.91! Archipack 2.3.3 brings a few bug fixes and enhancements."
-categories: ["All Disciplines", "Architecture"]
 tags: ["Archipack", "Blender", "Architecture"]
 wordpress_id: 180
 wordpress_guid: "https://osarch.org/?p=180"

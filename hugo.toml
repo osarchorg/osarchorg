@@ -81,7 +81,6 @@ copyright = "Except where otherwise noted, content on this site is licensed unde
   posts = "/:year/:month/:day/:slug/"
 
 [taxonomies]
-  category = "categories"
   tag = "tags"
 
 [markup.goldmark.renderer]

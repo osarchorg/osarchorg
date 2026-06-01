@@ -6,7 +6,6 @@ slug: "google-summer-of-code-2023-starting-soon"
 draft: false
 author: "Moult"
 description: "Google Summer of Code is an annual programme that helps students and those new to open source software make their first steps into contributing code to software projects. GSoC Contributors work with an open source organization on a 12+ week"
-categories: ["All Disciplines"]
 tags: ["FreeCAD", "Blender", "Inkscape", "LibreCAD", "IfcOpenShell", "BRL-CAD", "OpenSCAD", "CGAL", "Architecture", "Structure", "Services"]
 wordpress_id: 5496
 wordpress_guid: "https://osarch.org/?p=5496"

@@ -6,7 +6,6 @@ slug: "ifclite-adds-point-cloud-and-collaboration-workflows"
 draft: false
 author: "Louis Trümpler"
 description: "IFClite is expanding from browser-native IFC viewing into point cloud workflows and real-time collaborative IFC editing in the browser."
-categories: ["All Disciplines"]
 tags: ["IFClite", "Architecture", "Structure", "Services", "Construction", "Operations"]
 cover:
   image: "/uploads/2026/05/ifclite-point-cloud-openbim-workflow.jpg"

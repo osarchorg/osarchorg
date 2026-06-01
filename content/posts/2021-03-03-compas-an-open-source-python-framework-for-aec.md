@@ -6,7 +6,6 @@ slug: "compas-an-open-source-python-framework-for-aec"
 draft: false
 author: "Jesusbill"
 description: "COMPAS is an open source python framework for Architecture, Engineering, Fabrication, and Construction. Its goal is to simplify multidisciplinary collaboration in AEC research, encourage sharing and reuse of research results, and facilitate the transfer of state-of-the-art academic developments into practice."
-categories: ["All Disciplines"]
 tags: ["COMPAS"]
 wordpress_id: 557
 wordpress_guid: "https://osarch.org/?p=557"

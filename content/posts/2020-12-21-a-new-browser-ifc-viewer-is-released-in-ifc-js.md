@@ -6,7 +6,6 @@ slug: "a-new-browser-ifc-viewer-is-released-in-ifc-js"
 draft: false
 author: "Bruno Perdigao"
 description: "IFC.js is am open source java script library that turns any browser into an IFC viewer. It is a quick and easy way to visualize IFC files."
-categories: ["All Disciplines"]
 tags: ["ThatOpenPlatform"]
 wordpress_id: 221
 wordpress_guid: "https://osarch.org/?p=221"

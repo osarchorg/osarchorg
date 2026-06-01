@@ -6,7 +6,6 @@ slug: "studio-gib-open-source-architecture-as-a-business-model"
 draft: false
 author: "Moult"
 description: "Studio GIB describes how they use open source principles for their design and architecture projects, including a table and open air workshop."
-categories: ["All Disciplines"]
 tags: ["Architecture"]
 wordpress_id: 1149
 wordpress_guid: "https://osarch.org/?p=1149"

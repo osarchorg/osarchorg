@@ -6,7 +6,6 @@ slug: "procedural-pavilion-blender-for-architects-course-open-for-registration"
 draft: false
 author: "Moult"
 description: "This course focuses on creating a beach procedural pavilion. You will learn how to work with subdivision modeling with Blender's modifiers."
-categories: ["All Disciplines"]
 tags: ["Blender", "Architecture"]
 wordpress_id: 3256
 wordpress_guid: "https://osarch.org/?p=3256"

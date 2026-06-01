@@ -6,7 +6,6 @@ slug: "the-potential-open-source-game-engine-for-blender-bim"
 draft: false
 author: "chunchk"
 description: "In the AEC industry, integrating game engines into the design process has become increasingly popular due to technological advances. Add-ons such as Enscape, Twinmotion, Lumion and D5 Render provide real-time visualisation and VR capability"
-categories: ["All Disciplines"]
 tags: ["Godot", "Blender"]
 wordpress_id: 4968
 wordpress_guid: "https://osarch.org/?p=4968"

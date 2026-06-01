@@ -6,7 +6,6 @@ slug: "geometry-nodes-is-coming-to-blender-2-92"
 draft: false
 author: "Bruno Perdigao"
 description: "%%title%%. There is an alpha release you can download and check its possibilities for architecture."
-categories: ["All Disciplines", "Architecture"]
 tags: ["Blender", "Architecture"]
 wordpress_id: 148
 wordpress_guid: "https://osarch.org/?p=148"

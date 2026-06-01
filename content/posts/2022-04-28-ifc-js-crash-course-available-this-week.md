@@ -6,7 +6,6 @@ slug: "ifc-js-crash-course-available-this-week"
 draft: false
 author: "Moult"
 description: "The IFC.js crash course will teach you to create own BIM software. IFC.js is the leading open source library for creating Native IFC based apps."
-categories: ["All Disciplines"]
 tags: ["ThatOpenPlatform"]
 wordpress_id: 1243
 wordpress_guid: "https://osarch.org/?p=1243"

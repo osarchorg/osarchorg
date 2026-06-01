@@ -6,7 +6,6 @@ slug: "google-summer-of-code-2026-freecad-brl-cad"
 draft: false
 author: "Moult"
 description: "FreeCAD and BRL-CAD are participating in Google Summer of Code 2026, with BRL-CAD acting as an umbrella organisation for CAx projects including IfcOpenShell."
-categories: ["All Disciplines"]
 tags: ["FreeCAD", "BRL-CAD", "IfcOpenShell", "Bonsai"]
 cover:
   image: "/uploads/2026/05/google-summer-of-code-logo.png"

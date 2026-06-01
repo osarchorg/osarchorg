@@ -6,7 +6,6 @@ slug: "new-blenderbim-add-on-release-v0-0-201207"
 draft: false
 author: "Moult"
 description: "The BlenderBIM Add-on release v0.0.201207 include improved IFC round-tripping, and stabilisation of the new material system."
-categories: ["All Disciplines"]
 tags: ["Bonsai", "Blender", "Architecture", "Structure", "Services", "Construction"]
 wordpress_id: 172
 wordpress_guid: "https://osarch.org/?p=172"

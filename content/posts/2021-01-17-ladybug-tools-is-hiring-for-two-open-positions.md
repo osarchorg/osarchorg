@@ -6,7 +6,6 @@ slug: "ladybug-tools-is-hiring-for-two-open-positions"
 draft: false
 author: "Moult"
 description: "Ladybug Tools is looking for new team members. Ladybug Tools is a technology company providing software for environmental design."
-categories: ["All Disciplines"]
 tags: ["Ladybug Tools", "Sustainability"]
 wordpress_id: 495
 wordpress_guid: "https://osarch.org/?p=495"

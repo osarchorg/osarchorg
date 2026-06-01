@@ -6,7 +6,6 @@ slug: "linescad-announced"
 draft: false
 author: "Moult"
 description: "Yorik van Havre has announced LinesCAD, an early Python-based free software BIM and 2D CAD project built around IFC, IfcOpenShell, Qt, and Coin/Pivy."
-categories: ["All Disciplines"]
 tags: ["LinesCAD", "IfcOpenShell", "FreeCAD"]
 cover:
   image: "/uploads/2026/05/linescad-ifc-viewer-proof-of-concept.jpg"

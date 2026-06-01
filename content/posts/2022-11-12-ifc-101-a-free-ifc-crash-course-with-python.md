@@ -6,7 +6,6 @@ slug: "ifc-101-a-free-ifc-crash-course-with-python"
 draft: false
 author: "Yassine Oualid"
 description: "The IFC-101 series is a free course with python, taking you from the Basics of IFC up to building a native IFC native application."
-categories: ["All Disciplines"]
 tags: ["Bonsai", "IfcOpenShell", "Blender", "Architecture", "Structure", "Services", "Construction"]
 wordpress_id: 3467
 wordpress_guid: "https://osarch.org/?p=3467"

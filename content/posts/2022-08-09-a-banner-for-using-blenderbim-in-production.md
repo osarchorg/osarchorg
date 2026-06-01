@@ -6,7 +6,6 @@ slug: "a-banner-for-using-blenderbim-in-production"
 draft: false
 author: "theoryshaw"
 description: "OSArch has a new banner image! The BlenderBIM image is courtesy of a collaboration between Ioannis Christovasilis of Aether Engineering and Ryan Schultz of OpeningDesign. Read more about the project ..."
-categories: ["All Disciplines"]
 tags: ["Bonsai", "Blender", "FreeCAD", "Architecture", "Structure", "Services", "Construction"]
 wordpress_id: 2460
 wordpress_guid: "https://osarch.org/?p=2460"

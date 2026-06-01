@@ -6,7 +6,6 @@ slug: "vi-suite-user-manual-released-for-environmental-analysis-with-blender"
 draft: false
 author: "Moult"
 description: "The VI-Suite user manual has been released and is now available on the documentation page on the website. The VI-Suite is an open-source add-on to the 3D modelling and animation package Blender. It provides a set of tools for the analysis o"
-categories: ["All Disciplines"]
 tags: ["VI-Suite", "Blender", "Radiance", "EnergyPlus", "OpenFOAM", "Services", "Sustainability"]
 wordpress_id: 75
 wordpress_guid: "https://osarch.org/?p=75"

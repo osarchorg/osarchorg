@@ -6,7 +6,6 @@ slug: "suffolk-technologies-backs-speckle"
 draft: false
 author: "Moult"
 description: "Suffolk Technologies has invested in Speckle, following Suffolk Construction's enterprise-wide use of Speckle for AI-ready design intelligence and normalized BIM data."
-categories: ["All Disciplines"]
 tags: ["Speckle"]
 cover:
   image: "/uploads/2026/04/speckle-suffolk-technologies-investment.jpg"

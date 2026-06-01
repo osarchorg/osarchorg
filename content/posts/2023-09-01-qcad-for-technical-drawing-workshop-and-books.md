@@ -6,7 +6,6 @@ slug: "qcad-for-technical-drawing-workshop-and-books"
 draft: false
 author: "Allan Brito"
 description: "If you had to choose software to begin working in architectural design, which would be your first choice? Many might think that a BIM solution such as BlenderBIM or FreeCAD would be the ideal choice. In many cases, they offer numerous advan"
-categories: ["All Disciplines"]
 tags: ["QCAD", "Architecture"]
 wordpress_id: 6969
 wordpress_guid: "https://osarch.org/?p=6969"

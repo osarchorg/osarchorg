@@ -6,7 +6,6 @@ slug: "ifclite-adds-federated-loading-support"
 draft: false
 author: "Louis Trümpler"
 description: "IFClite, a browser-native IFC viewer built with WebGPU and Rust/WASM, has added federated loading support for IFC4, IFC4X3, and IFC5 workflows."
-categories: ["All Disciplines"]
 tags: ["IFClite", "Architecture", "Structure", "Services", "Construction"]
 cover:
   image: "/uploads/2026/01/ifclite-federated-loading-support.jpg"

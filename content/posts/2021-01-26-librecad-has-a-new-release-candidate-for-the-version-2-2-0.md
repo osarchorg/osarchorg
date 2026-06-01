@@ -6,7 +6,6 @@ slug: "librecad-has-a-new-release-candidate-for-the-version-2-2-0"
 draft: false
 author: "Bruno Perdigao"
 description: "Another exciting news for the users of Open Source 2D CAD softwares. LibreCAD has a new release candidate for the version 2.2.0."
-categories: ["All Disciplines"]
 tags: ["LibreCAD"]
 wordpress_id: 507
 wordpress_guid: "https://osarch.org/?p=507"

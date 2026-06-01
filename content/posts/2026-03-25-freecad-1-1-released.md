@@ -6,7 +6,6 @@ slug: "freecad-1-1-released"
 draft: false
 author: "Moult"
 description: "FreeCAD 1.1 has been released with Part Design previews, interactive draggers, 3 point lighting, Clarify Selection, Assembly and FEM improvements, animations, and a new CAM tool library system."
-categories: ["All Disciplines"]
 tags: ["FreeCAD"]
 cover:
   image: "/uploads/2026/03/freecad-1-1-release.png"

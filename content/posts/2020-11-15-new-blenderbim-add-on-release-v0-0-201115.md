@@ -6,7 +6,6 @@ slug: "new-blenderbim-add-on-release-v0-0-201115"
 draft: false
 author: "Moult"
 description: "The BlenderBIM Add-on release v0.0.201115 comes with 52 new features and fixes, including improved materials, layers, geolocation, and vendor workarounds."
-categories: ["All Disciplines"]
 tags: ["Bonsai", "Blender", "Architecture", "Structure", "Services", "Construction"]
 wordpress_id: 54
 wordpress_guid: "https://osarch.org/?p=54"

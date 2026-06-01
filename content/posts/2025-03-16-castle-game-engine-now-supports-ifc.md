@@ -6,7 +6,6 @@ slug: "castle-game-engine-now-supports-ifc"
 draft: false
 author: "Moult"
 description: "The Castle Game Engine is a free, open source, cross-platform (desktop, mobile, console, web) 3D and 2D game engine. It comes with a powerful visual editor and support for open standards like glTF, X3D, ... and now IFC - a key open standard"
-categories: ["All Disciplines"]
 tags: ["Castle Game Engine", "Bonsai", "FreeCAD", "Architecture", "Structure", "Services", "Construction"]
 wordpress_id: 10579
 wordpress_guid: "https://osarch.org/?p=10579"

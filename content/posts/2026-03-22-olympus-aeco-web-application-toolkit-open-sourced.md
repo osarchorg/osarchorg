@@ -6,7 +6,6 @@ slug: "olympus-aeco-web-application-toolkit-open-sourced"
 draft: false
 author: "YassineO"
 description: "Olympus is an open source toolkit for building and prototyping browser-based 3D AECO applications, with IFC support, a Three.js editor, Monaco code editor, charts, Python, undo-redo, and addons."
-categories: ["All Disciplines"]
 tags: ["IfcOpenShell", "Architecture", "Structure", "Services", "Construction", "Operations"]
 cover:
   image: "/uploads/2026/03/olympus-aeco-web-application-toolkit.png"

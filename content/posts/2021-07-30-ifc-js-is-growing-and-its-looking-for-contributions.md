@@ -6,7 +6,6 @@ slug: "ifc-js-is-growing-and-its-looking-for-contributions"
 draft: false
 author: "Bruno Perdigao"
 description: "The project has become one of the most exciting OS BIM projects. Now, IFC.js is growing and it's looking for contributions."
-categories: ["All Disciplines"]
 tags: ["ThatOpenPlatform"]
 wordpress_id: 804
 wordpress_guid: "https://osarch.org/?p=804"

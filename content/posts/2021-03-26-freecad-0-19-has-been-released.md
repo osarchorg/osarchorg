@@ -6,7 +6,6 @@ slug: "freecad-0-19-has-been-released"
 draft: false
 author: "Bruno Perdigao"
 description: "One of the most expected releases if finally here. FreeCAD 0.19 has been released with a lot of improvements and new features in all workbenches."
-categories: ["All Disciplines"]
 tags: ["FreeCAD", "Architecture", "Structure", "Services"]
 wordpress_id: 606
 wordpress_guid: "https://osarch.org/?p=606"

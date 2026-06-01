@@ -6,7 +6,6 @@ slug: "technical-drawing-creation-with-blender-and-inkscape-workshop"
 draft: false
 author: "Allan Brito"
 description: "When you start working with Blender to create architectural models, one of the last things you imagine is that it is possible to output technical drawings instead of a traditional render. Did you know that you can produce technical drawings"
-categories: ["Architecture"]
 tags: ["Blender", "Inkscape", "Architecture"]
 wordpress_id: 3149
 wordpress_guid: "https://osarch.org/?p=3149"

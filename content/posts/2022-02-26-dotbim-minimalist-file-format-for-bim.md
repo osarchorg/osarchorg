@@ -6,7 +6,6 @@ slug: "dotbim-minimalist-file-format-for-bim"
 draft: false
 author: "Moult"
 description: "An open-source, accessible, simple, minimalistic file format for BIM called dotbim that will allow you to store geometry and data with it."
-categories: ["All Disciplines"]
 tags: ["dotbim"]
 wordpress_id: 1034
 wordpress_guid: "https://osarch.org/?p=1034"

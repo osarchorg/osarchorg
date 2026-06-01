@@ -6,7 +6,6 @@ slug: "news-from-the-osarch-wiki"
 draft: false
 author: "duncan"
 description: "Part of our mission at OSArch is bringing people together & sharing knowledge. The OSArch Wiki plays an important role in this goal. In the OSArch Community Forum we discuss topics and on the wiki we document them. At least that’s the idea, but it takes a lot of dedicated work. I had some free time this week so I’ve been working on the OSArch wiki. Read on if that sort of information goldmine is interesting for you … maybe you’d like to help."
-categories: ["All Disciplines"]
 tags: []
 wordpress_id: 2328
 wordpress_guid: "https://osarch.org/?p=2328"

@@ -6,7 +6,6 @@ slug: "libredwg-0-12-is-released-a-free-c-library-to-read-dwg-file"
 draft: false
 author: "Bruno Perdigao"
 description: "LibreDWG 0.12 is now released. LibreDWG is a free C library to suppport softwares to handle DWG files, the native file format from AutoCAD."
-categories: ["All Disciplines"]
 tags: ["LibreDWG", "Architecture", "Structure", "Services"]
 wordpress_id: 420
 wordpress_guid: "https://osarch.org/?p=420"

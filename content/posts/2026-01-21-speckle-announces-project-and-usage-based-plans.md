@@ -6,7 +6,6 @@ slug: "speckle-announces-project-and-usage-based-plans"
 draft: false
 author: "Moult"
 description: "Speckle has announced a new hosted-service business model, moving away from seat-based pricing toward project and usage-based plans while keeping self-hosting and core open-source components available."
-categories: ["All Disciplines"]
 tags: ["Speckle"]
 cover:
   image: "/uploads/common/speckle-logo.png"

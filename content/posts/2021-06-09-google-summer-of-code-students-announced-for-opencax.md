@@ -6,7 +6,6 @@ slug: "google-summer-of-code-students-announced-for-opencax"
 draft: false
 author: "Bruno Perdigao"
 description: "Google Summer of Code 2021 students have been announced for OpenCAx projects, including BRL-CAD, FreeCAD, IfcOpenShell, and OpenSCAD."
-categories: ["All Disciplines"]
 tags: ["IfcOpenShell", "FreeCAD", "BRL-CAD", "Architecture", "Structure", "Services"]
 wordpress_id: 755
 wordpress_guid: "https://osarch.org/?p=755"

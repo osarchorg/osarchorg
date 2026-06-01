@@ -6,7 +6,6 @@ slug: "that-open-engine-3-2-open-modeling"
 draft: false
 author: "Moult"
 description: "That Open Platform's Release 3.2.0 introduced browser-based BIM model creation, editing, history, and geometry APIs for open modeling workflows."
-categories: ["All Disciplines"]
 tags: ["ThatOpenPlatform"]
 cover:
   image: "/uploads/2025/10/that-open-engine-3-2-open-modeling.png"

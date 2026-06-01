@@ -6,7 +6,6 @@ slug: "krita-is-releasing-the-first-beta-for-version-4-4-2"
 draft: false
 author: "Bruno Perdigao"
 description: "The Krita team released the first beta of their new version 4.4.2. It comes with a lot of bug fixes and few new interesting features."
-categories: ["All Disciplines"]
 tags: ["Krita", "GIMP", "Architecture"]
 wordpress_id: 218
 wordpress_guid: "https://osarch.org/?p=218"

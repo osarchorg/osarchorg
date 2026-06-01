@@ -6,7 +6,6 @@ slug: "epic-megagrants-funding-awarded-to-blenderbim-add-on"
 draft: false
 author: "Moult"
 description: "Epic MegaGrants funding will go towards developing the BlenderBIM Add-on and IfcOpenShell in three aspects: geometry, drawings, and IFC."
-categories: ["All Disciplines"]
 tags: ["Bonsai", "IfcOpenShell", "Blender", "Architecture", "Structure", "Services", "Construction"]
 wordpress_id: 687
 wordpress_guid: "https://osarch.org/?p=687"

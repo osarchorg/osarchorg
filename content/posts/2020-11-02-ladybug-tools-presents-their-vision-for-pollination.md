@@ -6,7 +6,6 @@ slug: "ladybug-tools-presents-their-vision-for-pollination"
 draft: false
 author: "Moult"
 description: "Ladybug Tools has been working hard on creating a new cloud-based environmental simulation platform called Pollination."
-categories: ["All Disciplines"]
 tags: ["Ladybug Tools", "Sustainability"]
 wordpress_id: 96
 wordpress_guid: "https://osarch.org/?p=96"

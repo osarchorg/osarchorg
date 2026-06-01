@@ -6,7 +6,6 @@ slug: "blender-for-architecture-workshop"
 draft: false
 author: "Allan Brito"
 description: "Since this is my first article, let me introduce myself and Blender 3D Architect . My name is Allan Brito, and I've been an architect working with Blender since version 2.35. When I started using Blender in 2005, it wasn't something that ma"
-categories: ["Architecture"]
 tags: ["Blender", "Architecture"]
 wordpress_id: 2025
 wordpress_guid: "https://osarch.org/?p=2025"

@@ -6,7 +6,6 @@ slug: "new-tissue-for-blender-2-91-add-on-v0-3-48-released"
 draft: false
 author: "Bruno Perdigao"
 description: "Alessandro Zomparelli just released a new version of his Tissue for Blender add-on featuring the new Convert to Curve tool.."
-categories: ["All Disciplines", "Architecture"]
 tags: ["Tissue", "Blender", "Architecture"]
 wordpress_id: 131
 wordpress_guid: "https://osarch.org/?p=131"

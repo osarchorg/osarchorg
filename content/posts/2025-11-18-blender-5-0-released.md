@@ -6,7 +6,6 @@ slug: "blender-5-0-released"
 draft: false
 author: "Moult"
 description: "Blender 5.0 has been released with a redesigned HDR and wide-gamut color management pipeline, Video Sequencer improvements, Geometry Nodes updates, Grease Pencil refinements, and more."
-categories: ["All Disciplines"]
 tags: ["Blender", "Architecture"]
 cover:
   image: "/uploads/2025/11/blender-5-0-release-splash.jpg"

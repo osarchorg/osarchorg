@@ -6,7 +6,6 @@ slug: "new-blender-2-91-released-with-improved-booleans-drawings-and-bevels"
 draft: false
 author: "Moult"
 description: "Blender 2.91 is here with improved user experience, new booleans, better sculpting, objects modifiers, animation tools and so much more."
-categories: ["All Disciplines"]
 tags: ["Blender"]
 wordpress_id: 91
 wordpress_guid: "https://osarch.org/?p=91"

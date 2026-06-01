@@ -6,7 +6,6 @@ slug: "whitepaper-published-on-native-ifc-methodologies"
 draft: false
 author: "Moult"
 description: "A new whitepaper has been published on Native IFC methodologies, authored by Bruno Postle, developer of Native IFC software Homemaker, and co-authored by Thomas Krijnen and Dion Moult, developers of Native IFC libraries and interfaces. The "
-categories: ["All Disciplines"]
 tags: ["Bonsai", "ThatOpenPlatform", "Architecture", "Structure", "Services", "Construction"]
 wordpress_id: 3310
 wordpress_guid: "https://osarch.org/?p=3310"

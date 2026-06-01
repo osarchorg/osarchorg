@@ -6,7 +6,6 @@ slug: "new-open-source-4d-project-planning-and-controls-toolkit"
 draft: false
 author: "Moult"
 description: "There is a new suite of open source 4D project planning and controls libraries developed by Hassam Emam, a professional project planner."
-categories: ["All Disciplines"]
 tags: ["Construction"]
 wordpress_id: 3308
 wordpress_guid: "https://osarch.org/?p=3308"

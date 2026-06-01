@@ -6,7 +6,6 @@ slug: "freecad-1-1-1-released"
 draft: false
 author: "Moult"
 description: "FreeCAD 1.1.1 has been released shortly after 1.1.0, collecting a large number of fixes and updated packages."
-categories: ["All Disciplines"]
 tags: ["FreeCAD"]
 cover:
   image: "/uploads/2026/04/freecad-1-1-1-release.png"

@@ -6,7 +6,6 @@ slug: "a-call-for-projects-to-fund-via-osarchs-open-collective-site"
 draft: false
 author: "theoryshaw"
 description: "As many of you know, we recently created a funding platform on Open Collective:  https://opencollective.com/osarch Here the community can fund OSArch in general, and/or fund specific projects directly. To just get the ball rolling, the stee"
-categories: ["All Disciplines"]
 tags: []
 wordpress_id: 3384
 wordpress_guid: "https://osarch.org/?p=3384"

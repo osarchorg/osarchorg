@@ -6,7 +6,6 @@ slug: "bim-project-management-openproject-11-1-released"
 draft: false
 author: "Moult"
 description: "OpenProject 11.1 has recently been released. OpenProject is an open source and free web application for BIM project management."
-categories: ["All Disciplines"]
 tags: ["OpenProject", "Construction"]
 wordpress_id: 410
 wordpress_guid: "https://osarch.org/?p=410"

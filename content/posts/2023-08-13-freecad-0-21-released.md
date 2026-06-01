@@ -6,7 +6,6 @@ slug: "freecad-0-21-released"
 draft: false
 author: "Yorik van Havre"
 description: "Last week, a new stable release of FreeCAD has been published, tagged 0.21. This release is mostly there to provide a stable point before implementing Toponaming resolution functionality. Toponaming is how we call the problem of unstable re"
-categories: ["All Disciplines"]
 tags: ["FreeCAD", "Architecture", "Structure", "Services"]
 wordpress_id: 6833
 wordpress_guid: "https://osarch.org/?p=6833"

@@ -6,7 +6,6 @@ slug: "freecad-bim-development-news-update-for-october-2020"
 draft: false
 author: "Moult"
 description: "FreeCAD BIM features Oct 2020 monthly summary of improvements include new TechDraw patterns, Draft styling, and BIM image plane tool."
-categories: ["All Disciplines"]
 tags: ["FreeCAD", "Architecture", "Structure", "Services"]
 wordpress_id: 69
 wordpress_guid: "https://osarch.org/?p=69"

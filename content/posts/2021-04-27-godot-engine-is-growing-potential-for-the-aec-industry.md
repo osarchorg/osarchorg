@@ -6,7 +6,6 @@ slug: "godot-engine-is-growing-potential-for-the-aec-industry"
 draft: false
 author: "Bruno Perdigao"
 description: "Godot Engine, the open source game engine is slowly growing to become one of the favorite game engines out there."
-categories: ["All Disciplines"]
 tags: ["Godot"]
 wordpress_id: 659
 wordpress_guid: "https://osarch.org/?p=659"

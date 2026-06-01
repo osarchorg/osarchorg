@@ -6,7 +6,6 @@ slug: "bonsai-0-8-4-released"
 draft: false
 author: "Moult"
 description: "Bonsai 0.8.4 has been released with 1111 new features and fixes, including Blender 5.0 support, IfcTester.org, RocksDB IFC model handling, and web-focused IfcOpenShell packaging."
-categories: ["All Disciplines"]
 tags: ["Bonsai", "IfcOpenShell", "Blender", "Architecture", "Structure", "Services", "Construction", "Operations"]
 cover:
   image: "/uploads/2025/11/bonsai-0-8-4-release.png"

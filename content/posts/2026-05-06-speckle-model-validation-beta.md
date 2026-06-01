@@ -6,7 +6,6 @@ slug: "speckle-model-validation-beta"
 draft: false
 author: "Moult"
 description: "Speckle has introduced a signals-first web interface and Model Validation beta, helping teams check BIM data completeness, consistency, and rule compliance across model versions."
-categories: ["All Disciplines"]
 tags: ["Speckle"]
 cover:
   image: "/uploads/2026/05/speckle-model-validation.jpg"

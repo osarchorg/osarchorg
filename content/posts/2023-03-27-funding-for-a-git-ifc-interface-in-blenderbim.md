@@ -6,7 +6,6 @@ slug: "funding-for-a-git-ifc-interface-in-blenderbim"
 draft: false
 author: "theoryshaw"
 description: "Imagine GIT for IFC files. That is, imagine a tool that keeps track of changes to an IFC file over the duration of a design project--a tool that allows branching or forking of different design options from a distributed team, and tool that "
-categories: ["All Disciplines"]
 tags: ["Bonsai", "FreeCAD", "Architecture", "Structure", "Services", "Construction"]
 wordpress_id: 5835
 wordpress_guid: "https://osarch.org/?p=5835"

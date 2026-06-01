@@ -6,7 +6,6 @@ slug: "hello-world"
 draft: false
 author: "Moult"
 description: "OSArch is a community of those who believe in creating a built environment with free software , increased transparency , and a more ethical approach . For 10 months, we've been helping build free software, writing tutorials and documentatio"
-categories: ["All Disciplines", "Architecture"]
 tags: []
 wordpress_id: 1
 wordpress_guid: "https://osarch.org/?p=1"

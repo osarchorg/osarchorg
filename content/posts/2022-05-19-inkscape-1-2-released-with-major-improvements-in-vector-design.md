@@ -6,7 +6,6 @@ slug: "inkscape-1-2-released-with-major-improvements-in-vector-design"
 draft: false
 author: "Moult"
 description: "Inkscape 1.2 has been released with major improvements for alignments, multipage documents, gradients, markers, and text flow."
-categories: ["All Disciplines"]
 tags: ["Inkscape"]
 wordpress_id: 1528
 wordpress_guid: "https://osarch.org/?p=1528"

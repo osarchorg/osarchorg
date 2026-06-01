@@ -6,7 +6,6 @@ slug: "what-is-brickschema-and-how-can-i-use-it-update-blenderbim-add-ons-brick-
 draft: false
 author: "Riley Wong"
 description: "For the past 8 weeks, I've been working on the BlenderBIM Add-on's Brickschema authoring module as part of the Google Summer of Code Program . I’m pretty new to the schema, but I’ve learned a lot about its usage and implications! I’ve liste"
-categories: ["All Disciplines"]
 tags: ["Bonsai", "Architecture", "Structure", "Services", "Construction", "Operations"]
 wordpress_id: 6662
 wordpress_guid: "https://osarch.org/?p=6662"

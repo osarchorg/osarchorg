@@ -6,7 +6,6 @@ slug: "bonsai-viewer-is-coming"
 draft: false
 author: "Moult"
 description: "Bonsai Viewer is being developed as a free software IFC coordination and review viewer, addressing the gap left by commercial tools such as Revizto, BIMcollab, and Solibri."
-categories: ["All Disciplines"]
 tags: ["Bonsai", "IfcOpenShell", "Architecture", "Structure", "Services", "Construction", "Operations"]
 cover:
   image: "/uploads/2026/05/bonsai-viewer-ui-preview.png"

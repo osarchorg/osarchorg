@@ -6,7 +6,6 @@ slug: "support-osarch-with-money"
 draft: false
 author: "duncan"
 description: "We now have a platform ready to present projects and manage donations. Just head over to the new OSArch Open Collective."
-categories: ["All Disciplines"]
 tags: []
 wordpress_id: 2895
 wordpress_guid: "https://osarch.org/?p=2895"
