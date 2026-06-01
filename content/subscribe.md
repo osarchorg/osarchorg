@@ -5,7 +5,9 @@ aliases:
   - /newsletter/
 ---
 
-You can follow OSArch news with a feed reader. A feed reader is an app or website that checks for new posts and shows them in one place, without needing email newsletters or social media.
+{{< listmonk-form >}}
+
+Alternatively, you can follow OSArch news with a feed reader. A feed reader is an app or website that checks for new posts and shows them in one place, without needing email newsletters or social media.
 
 Our news feed is:
 

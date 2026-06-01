@@ -404,6 +404,90 @@ a:hover {
   background-color: #db2339;
 }
 
+.listmonk-form {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  padding: 16px;
+  color: #667d99;
+  background-color: #f3f6f9;
+  border: 1px solid #e7edf3;
+  border-radius: 5px;
+}
+
+.listmonk-form h3 {
+  margin-top: 0;
+  margin-bottom: 12px;
+  color: #667d99;
+  font-size: 16px;
+}
+
+.listmonk-form p {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.listmonk-form input[type="email"],
+.listmonk-form input[type="text"] {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 8px 12px;
+  color: #24292e;
+  background-color: #ffffff;
+  border: 1px solid #e1e4e8;
+  border-radius: 6px;
+  font: inherit;
+  line-height: 20px;
+  outline: none;
+  box-shadow: rgba(225, 228, 232, 0.2) 0 1px 0 0 inset;
+}
+
+.listmonk-form input[type="email"]:focus,
+.listmonk-form input[type="text"]:focus {
+  border-color: #0366d6;
+  box-shadow: rgba(3, 102, 214, 0.3) 0 0 0 3px;
+}
+
+.listmonk-form input[type="submit"] {
+  display: inline-block;
+  width: auto;
+  padding: 5px 12px;
+  color: #fff;
+  background-color: #e14658;
+  border: 1px solid #db2339;
+  border-radius: 6px;
+  font: inherit;
+  line-height: 20px;
+  cursor: pointer;
+  box-shadow: rgba(225, 228, 232, 0.2) 0 1px 0 0 inset;
+}
+
+.listmonk-form input[type="submit"]:hover {
+  background-color: #db2339;
+}
+
+.listmonk-list-choice {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  column-gap: 8px;
+  align-items: start;
+}
+
+.listmonk-list-choice input {
+  margin-top: 3px;
+}
+
+.listmonk-list-choice label {
+  color: #667d99;
+  font-weight: bold;
+}
+
+.listmonk-list-choice span {
+  grid-column: 2;
+  color: #aaa;
+  font-size: 13px;
+  line-height: 1.3;
+}
+
 .nav-search input:focus,
 #searchbox input:focus {
   border-color: #0366d6;
