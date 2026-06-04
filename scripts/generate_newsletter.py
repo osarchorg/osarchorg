@@ -255,13 +255,7 @@ def render_event_card(page: Page) -> str:
       </tr>"""
 
 
-def render_html(posts: list[Page], events: list[Page]) -> str:
-    latest_date = parse_dt(posts[0].data.get("date")) if posts else datetime.now(timezone.utc)
-    subject_date = latest_date.strftime("%B %Y")
-    preheader = (
-        f"The latest OSArch news plus {len(events)} upcoming "
-        f"event{'s' if len(events) != 1 else ''}."
-    )
+def render_content(posts: list[Page], events: list[Page]) -> str:
     news_rows = "\n".join(render_news_card(post) for post in posts)
     event_rows = (
         "\n".join(render_event_card(event) for event in events)
@@ -269,63 +263,119 @@ def render_html(posts: list[Page], events: list[Page]) -> str:
         else '<tr><td style="padding:10px;background:#f3f6f9;border-bottom:1px solid #eee;border-radius:5px;font-family:Arial,sans-serif;font-size:15px;line-height:23px;color:#667d99;">No upcoming events are currently listed.</td></tr>'
     )
 
+    return f"""<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="border-collapse:collapse;background:#ffffff;">
+  <tr>
+    <td class="pad" style="padding:28px 34px 26px 34px;background:#e7edf3;border-bottom:1px solid #eee;border-radius:5px;">
+      <a href="{BASE_URL}/" style="text-decoration:none;"><img class="logo" src="{BASE_URL}/logo.png" width="32" alt="OSArch" style="display:block;border:0;width:32px;height:32px;margin:0 0 24px 0;"></a>
+      <p style="margin:0 0 8px 0;font-family:Arial,sans-serif;font-size:14px;line-height:20px;color:#e14658;text-transform:uppercase;letter-spacing:1px;">Newsletter</p>
+      <h1 style="margin:0 0 12px 0;font-family:Arial,sans-serif;font-size:36px;line-height:42px;color:#667d99;font-weight:bold;">Latest open source AEC news</h1>
+      <p style="margin:0;font-family:Arial,sans-serif;font-size:17px;line-height:26px;color:#667d99;">Community curated news and events for free software in AEC</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="pad" style="padding:30px 0 8px 0;">
+      <h2 style="margin:0 0 20px 0;font-family:Arial,sans-serif;font-size:24px;line-height:30px;color:#667d99;">News</h2>
+      <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="border-collapse:separate;border-spacing:0 10px;">
+        {news_rows}
+      </table>
+    </td>
+  </tr>
+  <tr>
+    <td class="pad" style="padding:24px 0 10px 0;background:#ffffff;">
+      <h2 style="margin:0 0 4px 0;font-family:Arial,sans-serif;font-size:24px;line-height:30px;color:#667d99;">Upcoming Events</h2>
+      <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="border-collapse:separate;border-spacing:0 10px;">
+        {event_rows}
+      </table>
+    </td>
+  </tr>
+  <tr>
+    <td class="pad" style="padding:24px 0 32px 0;background:#ffffff;">
+      <p style="margin:0 0 12px 0;font-family:Arial,sans-serif;font-size:15px;line-height:23px;color:#667d99;">Have news or an event to share? Post it on the community forum or join the live chat.</p>
+      <p style="margin:0;font-family:Arial,sans-serif;font-size:14px;line-height:22px;color:#667d99;"><a href="https://community.osarch.org/" style="color:#e14658;text-decoration:underline;">Forum</a> &middot; <a href="{BASE_URL}/chat/" style="color:#e14658;text-decoration:underline;">Live Chat</a> &middot; <a href="{BASE_URL}/events/" style="color:#e14658;text-decoration:underline;">Events Calendar</a> &middot; <a href="{BASE_URL}/" style="color:#e14658;text-decoration:underline;">OSArch News</a></p>
+    </td>
+  </tr>
+</table>
+"""
+
+
+def render_campaign_template(content: str = '{{ template "content" . }}') -> str:
     return f"""<!doctype html>
 <html lang="en">
 <head>
+  <title>{{{{ .Campaign.Subject }}}}</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="x-apple-disable-message-reformatting">
-  <title>OSArch Newsletter - {html.escape(subject_date)}</title>
+  <base target="_blank">
   <style>
+    body {{
+      margin: 0;
+      padding: 0;
+      background: #ffffff;
+      color: #667d99;
+      font-family: "Open Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+      font-size: 15px;
+      line-height: 1.3;
+    }}
+    table {{
+      border: 0;
+    }}
+    table td {{
+      border: 0;
+    }}
+    img {{
+      max-width: 100%;
+      height: auto;
+    }}
+    a {{
+      color: #e14658;
+    }}
+    a:hover {{
+      color: #db2339;
+    }}
+    .gutter {{
+      padding: 24px;
+    }}
+    .wrap {{
+      background: #ffffff;
+      max-width: 640px;
+      margin: 0 auto;
+      border-radius: 5px;
+    }}
+    .footer {{
+      text-align: center;
+      font-size: 12px;
+      line-height: 18px;
+      color: #aaa;
+      padding: 0 24px;
+    }}
+    .footer a {{
+      color: #aaa;
+      margin-right: 5px;
+    }}
     @media only screen and (max-width: 620px) {{
-      .container {{ width: 100% !important; }}
       .pad {{ padding-left: 20px !important; padding-right: 20px !important; }}
       .stack {{ display: block !important; width: 100% !important; padding-right: 0 !important; }}
       .logo {{ width: 32px !important; height: 32px !important; }}
       h1 {{ font-size: 30px !important; line-height: 36px !important; }}
+      .gutter {{ padding: 10px !important; }}
+      .wrap {{ max-width: none !important; }}
     }}
   </style>
 </head>
-<body style="margin:0;padding:0;background:#ffffff;color:#667d99;">
-  <div style="display:none;max-height:0;overflow:hidden;opacity:0;color:transparent;">{html.escape(preheader)}</div>
-  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="border-collapse:collapse;background:#ffffff;">
-    <tr>
-      <td align="center" style="padding:24px 12px;">
-        <table role="presentation" class="container" width="640" cellpadding="0" cellspacing="0" style="width:640px;max-width:640px;border-collapse:collapse;background:#ffffff;border-radius:5px;overflow:hidden;">
-          <tr>
-            <td class="pad" style="padding:28px 34px 26px 34px;background:#e7edf3;border-bottom:1px solid #eee;">
-              <a href="{BASE_URL}/" style="text-decoration:none;"><img class="logo" src="{BASE_URL}/logo.png" width="32" alt="OSArch" style="display:block;border:0;width:32px;height:32px;margin:0 0 24px 0;"></a>
-              <p style="margin:0 0 8px 0;font-family:Arial,sans-serif;font-size:14px;line-height:20px;color:#e14658;text-transform:uppercase;letter-spacing:1px;">Newsletter</p>
-              <h1 style="margin:0 0 12px 0;font-family:Arial,sans-serif;font-size:36px;line-height:42px;color:#667d99;font-weight:bold;">Latest open source AEC news</h1>
-              <p style="margin:0;font-family:Arial,sans-serif;font-size:17px;line-height:26px;color:#667d99;">Community curated news and events for free software in AEC</p>
-            </td>
-          </tr>
-          <tr>
-            <td class="pad" style="padding:30px 34px 8px 34px;">
-              <h2 style="margin:0 0 20px 0;font-family:Arial,sans-serif;font-size:24px;line-height:30px;color:#667d99;">News</h2>
-              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="border-collapse:separate;border-spacing:0 10px;">
-                {news_rows}
-              </table>
-            </td>
-          </tr>
-          <tr>
-            <td class="pad" style="padding:24px 34px 10px 34px;background:#ffffff;">
-              <h2 style="margin:0 0 4px 0;font-family:Arial,sans-serif;font-size:24px;line-height:30px;color:#667d99;">Upcoming Events</h2>
-              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="border-collapse:separate;border-spacing:0 10px;">
-                {event_rows}
-              </table>
-            </td>
-          </tr>
-          <tr>
-            <td class="pad" style="padding:24px 34px 32px 34px;background:#ffffff;">
-              <p style="margin:0 0 12px 0;font-family:Arial,sans-serif;font-size:15px;line-height:23px;color:#667d99;">Have news or an event to share? Post it on the community forum or join the live chat.</p>
-              <p style="margin:0;font-family:Arial,sans-serif;font-size:14px;line-height:22px;color:#667d99;"><a href="https://community.osarch.org/" style="color:#e14658;text-decoration:underline;">Forum</a> &middot; <a href="{BASE_URL}/chat/" style="color:#e14658;text-decoration:underline;">Live Chat</a> &middot; <a href="{BASE_URL}/events/" style="color:#e14658;text-decoration:underline;">Events Calendar</a> &middot; <a href="{BASE_URL}/" style="color:#e14658;text-decoration:underline;">OSArch News</a></p>
-            </td>
-          </tr>
-        </table>
-      </td>
-    </tr>
-  </table>
+<body style="margin:0;padding:0;background:#ffffff;color:#667d99;font-family:'Open Sans',system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif;font-size:15px;line-height:1.3;">
+  <div class="gutter" style="padding:24px;">&nbsp;</div>
+  <div class="wrap" style="background:#ffffff;max-width:640px;margin:0 auto;border-radius:5px;">
+    {content}
+  </div>
+  <div class="footer" style="text-align:center;font-size:12px;line-height:18px;color:#aaa;padding:0 24px;">
+    <p>
+      <a href="{{{{ UnsubscribeURL }}}}" style="color:#aaa;">{{{{ L.T "email.unsub" }}}}</a>
+      &nbsp;&nbsp;
+      <a href="{{{{ MessageURL }}}}" style="color:#aaa;">{{{{ L.T "email.viewInBrowser" }}}}</a>
+    </p>
+  </div>
+  <div class="gutter" style="padding:24px;">&nbsp;{{{{ TrackView }}}}</div>
 </body>
 </html>
 """
@@ -393,20 +443,27 @@ def render_text(posts: list[Page], events: list[Page]) -> str:
 def main() -> int:
     args = parse_args()
     root = Path(__file__).resolve().parents[1]
-    today = datetime.now(timezone.utc)
+    today = datetime.now().astimezone()
     stem = f"newsletter-{today.strftime('%Y-%m-%d')}"
 
     posts = latest_posts(root, args.news_count)
     events = upcoming_events(root, today)
 
     html_output = Path.cwd() / f"{stem}.html"
+    preview_output = Path.cwd() / f"{stem}-preview.html"
     text_output = Path.cwd() / f"{stem}.txt"
+    template_output = Path.cwd() / "template.html"
 
-    html_output.write_text(render_html(posts, events), encoding="utf-8")
+    content = render_content(posts, events)
+    html_output.write_text(content, encoding="utf-8")
+    preview_output.write_text(render_campaign_template(content), encoding="utf-8")
     text_output.write_text(render_text(posts, events), encoding="utf-8")
+    template_output.write_text(render_campaign_template(), encoding="utf-8")
 
     print(f"Wrote {html_output}")
+    print(f"Wrote {preview_output}")
     print(f"Wrote {text_output}")
+    print(f"Wrote {template_output}")
     print(f"Included {len(posts)} news item(s) and {len(events)} upcoming event(s).")
     return 0
 
