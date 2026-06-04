@@ -166,6 +166,7 @@ name in the post front matter.
 - GIMP
 - Godot
 - Hippo3D
+- IFC Georeferencer
 - IFClite
 - IfcOpenShell
 - Inkscape
