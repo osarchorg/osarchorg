@@ -247,4 +247,5 @@ Copy the printed text into the OSArch LinkedIn company page post composer, attac
 the printed image path, and use the printed alt text when LinkedIn allows alt
 text entry.
 
-Twitter / X support is currently untested and should not be used.
+OSArch has stopped using Twitter / X. Do not post there and do not add Twitter /
+X credentials or automation.

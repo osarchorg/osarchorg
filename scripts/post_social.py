@@ -45,16 +45,14 @@ class Post:
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
-        description=(
-            "Post an OSArch Hugo article to Mastodon/X, or print LinkedIn copy."
-        )
+        description="Post an OSArch Hugo article to Mastodon, or print LinkedIn copy."
     )
     parser.add_argument("post", type=Path, help="path to content/posts/*.md")
     parser.add_argument(
         "-p",
         "--platform",
         action="append",
-        choices=("mastodon", "linkedin", "x"),
+        choices=("mastodon", "linkedin"),
         help="platform to post to; repeatable; defaults to all configured platforms",
     )
     parser.add_argument(
@@ -180,10 +178,6 @@ def parse_datetime(value: str) -> datetime:
 
 
 def default_text(post: Post, platform: str) -> str:
-    if platform == "x":
-        text = f"{post.title}\n\n{post.description}\n\n{post.url}"
-        return text if len(text) <= 280 else f"{post.title}\n\n{post.url}"
-
     hashtags = "\n\n#AEC #OpenSource #FreeSoftware" if platform == "mastodon" else ""
     return f"{post.title}\n\n{post.description}\n\n{post.url}{hashtags}"
 
@@ -195,10 +189,8 @@ def configured_platforms(requested: list[str] | None) -> list[str]:
     platforms: list[str] = []
     if os.getenv("MASTODON_ACCESS_TOKEN"):
         platforms.append("mastodon")
-    if os.getenv("X_ACCESS_TOKEN"):
-        platforms.append("x")
     if not platforms:
-        return ["mastodon", "linkedin", "x"]
+        return ["mastodon", "linkedin"]
     return platforms
 
 
@@ -313,17 +305,6 @@ def print_linkedin_copy(text: str, post: Post) -> None:
         print("Image: none")
 
 
-def post_x(text: str, live: bool) -> None:
-    token = required_env("X_ACCESS_TOKEN")
-    payload = {"text": text}
-    body = json.dumps(payload).encode()
-    headers = {
-        "Authorization": f"Bearer {token}",
-        "Content-Type": "application/json",
-    }
-    send("x", "https://api.x.com/2/tweets", body, headers, live)
-
-
 def mask_headers(headers: dict[str, str]) -> dict[str, str]:
     return {
         key: ("Bearer ..." if key.lower() == "authorization" else value)
@@ -387,8 +368,6 @@ def main() -> int:
             post_mastodon(text, post, args.live)
         elif platform == "linkedin":
             print_linkedin_copy(text, post)
-        elif platform == "x":
-            post_x(text, args.live)
 
     return 0
 
