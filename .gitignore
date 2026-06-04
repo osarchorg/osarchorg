@@ -3,3 +3,6 @@
 /layouts.local-backup/
 __pycache__/
 *.py[cod]
+.env
+.env.*
+!.env.example

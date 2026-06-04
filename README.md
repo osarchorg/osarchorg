@@ -207,3 +207,44 @@ hugo --cleanDestinationDir
 ```
 
 Check the generated site locally and commit the source files. The generated `public/` directory is build output and should not be committed unless the deployment process explicitly requires it.
+
+## Social Posting
+
+Use `scripts/post_social.py` after a post is written and its cover image exists.
+The script reads Hugo front matter, generates the canonical post URL, and uses
+the post cover image and alt text where supported.
+
+Social API credentials are stored locally in `.env.local`, which is ignored by
+git. Do not commit real tokens. If credentials are missing or invalid, talk to
+Dion Moult for API keys.
+
+For Mastodon, the OSArch account is `https://fosstodon.org/@osarch`. The
+Mastodon instance is hardcoded as `https://fosstodon.org`. The token needs
+`write:statuses` and `write:media`, or the broader `write` scope. To dry-run:
+
+```sh
+scripts/post_social.py -p mastodon content/posts/YYYY-MM-DD-post-title.md
+```
+
+To post live to Mastodon:
+
+```sh
+scripts/post_social.py --live -p mastodon content/posts/YYYY-MM-DD-post-title.md
+```
+
+This uploads the cover image first, with the front matter `cover.alt` text, and
+then publishes the status with the image attached.
+
+LinkedIn company page posting is manual. LinkedIn's API requires
+`w_organization_social`, which OSArch does not currently use. Do not try to use
+LinkedIn API automation. Generate copy/paste text and the image path with:
+
+```sh
+scripts/post_social.py -p linkedin content/posts/YYYY-MM-DD-post-title.md
+```
+
+Copy the printed text into the OSArch LinkedIn company page post composer, attach
+the printed image path, and use the printed alt text when LinkedIn allows alt
+text entry.
+
+Twitter / X support is currently untested and should not be used.

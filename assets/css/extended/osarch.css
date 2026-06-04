@@ -316,6 +316,57 @@ a:hover {
   color: #667d99;
 }
 
+.post-content .social-links {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+  padding-left: 0;
+  list-style: none;
+}
+
+.post-content .social-links li {
+  margin: 0;
+}
+
+.post-content .social-links a {
+  display: grid;
+  grid-template-columns: 28px minmax(0, 1fr);
+  gap: 10px;
+  align-items: center;
+  min-height: 56px;
+  padding: 10px;
+  color: #667d99;
+  background-color: #f3f6f9;
+  border-radius: 5px;
+}
+
+.post-content .social-links a:hover {
+  color: #db2339;
+  background-color: #e7edf3;
+}
+
+.post-content .social-links svg {
+  width: 24px;
+  height: 24px;
+  fill: currentColor;
+}
+
+.post-content .social-links strong,
+.post-content .social-links small {
+  display: block;
+}
+
+.post-content .social-links strong {
+  font-size: 15px;
+}
+
+.post-content .social-links small {
+  margin-top: 2px;
+  color: #aaa;
+  font-size: 12px;
+  line-height: 1.2;
+}
+
 .post-content pre,
 .post-content blockquote {
   border-radius: 5px;
@@ -713,6 +764,10 @@ a:hover {
   }
 
   .event-calendar-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .post-content .social-links {
     grid-template-columns: 1fr;
   }
 
