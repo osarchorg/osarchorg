@@ -174,6 +174,7 @@ name in the post front matter.
 - Ladybug Tools
 - LibreCAD
 - LibreDWG
+- OpenAEC
 - OpenFOAM
 - OpenProject
 - OpenSCAD

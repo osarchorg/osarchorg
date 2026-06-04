@@ -216,6 +216,19 @@ a:hover {
   box-shadow: rgba(149, 157, 165, 0.15) 0 3px 6px 0;
 }
 
+.post-single .entry-cover {
+  text-align: center;
+}
+
+.post-single .entry-cover img {
+  margin-left: auto;
+  margin-right: auto;
+  max-height: 350px;
+  width: auto;
+  max-width: 100%;
+  object-fit: contain;
+}
+
 .entry-header h2 {
   color: #667d99;
   font-size: 16px;
