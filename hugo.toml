@@ -2,7 +2,7 @@ theme = "PaperMod"
 baseURL = "https://osarch.org/"
 languageCode = "en-us"
 title = "OSArch"
-timeZone = "Europe/London"
+timeZone = "Australia/Sydney"
 summaryLength = 35
 copyright = "Except where otherwise noted, content on this site is licensed under CC BY 4.0."
 
