@@ -7,6 +7,11 @@ draft: false
 author: "Louis Trümpler"
 description: "IFClite has merged a clean-room exact-arithmetic mesh-arrangement CSG kernel that replaces separate Manifold (browser) and BSP (server) backends, giving bit-identical boolean output on x86_64, aarch64, and wasm32."
 tags: ["IFClite", "IfcOpenShell", "Construction", "Structure"]
+cover:
+  image: "/uploads/2026/06/ifc-lite-exact-csg-kernel.jpg"
+  alt: "IFClite exact CSG kernel rendering a roof with dormers, gable ends, and skylight openings"
+  hiddenInSingle: false
+  hiddenInList: false
 ---
 
 [IFClite has merged PR #1024](https://github.com/LTplus-AG/ifc-lite/pull/1024), replacing its two boolean backends with a single pure-Rust exact CSG kernel. The browser build previously relied on the C++ Manifold library via WASM cross-compilation; the native server path used an in-tree BSP port. Both are gone. The new kernel is a clean-room mesh-arrangement implementation: operand meshes are intersected conformingly (shared symbolic vertices for line-plane and triple-plane intersection points), re-triangulated under exact predicates, then classified for difference, union, or intersection. Every topology decision routes through a predicate cascade (interval filter, fixed-width tier, `BigRational` oracle) built on Shewchuk adaptive predicates for explicit coordinates and Cherchi-style indirect predicates (Attene 2020) for implicit intersection geometry. The public API (`processGeometryBatch`, SDK surface) is unchanged; consumers see different triangulations wherever booleans fire.
