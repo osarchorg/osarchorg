@@ -175,6 +175,8 @@ name in the post front matter.
 - LibreCAD
 - LibreDWG
 - OpenAEC
+- Open CAD Studio
+- Open Planner Studio
 - OpenFOAM
 - OpenProject
 - OpenSCAD
