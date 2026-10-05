@@ -156,6 +156,7 @@ name in the post front matter.
 - Bonsai
 - BRL-CAD
 - CAD Sketcher
+- CADBase
 - Castle Game Engine
 - CGAL
 - COMPAS
