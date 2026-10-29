@@ -151,6 +151,7 @@ name in the post front matter.
 
 ### Software Tags
 
+- acadrust
 - Archipack
 - BabylonJS
 - Bonsai
@@ -168,6 +169,7 @@ name in the post front matter.
 - Godot
 - Hippo3D
 - IFC Georeferencer
+- IFCCAD
 - IFClite
 - IfcOpenShell
 - Inkscape
@@ -181,6 +183,8 @@ name in the post front matter.
 - OpenFOAM
 - OpenProject
 - OpenSCAD
+- OpenSeesPy
+- OpenSKP
 - Open Source Ecology
 - pystran
 - QCAD
@@ -203,6 +207,9 @@ name in the post front matter.
 - Sustainability
 
 ## Publishing
+
+See [the news queue](NEWS_QUEUE.md) for drafts awaiting review and the next
+newsletter trigger. Keep that list current when adding or publishing a draft.
 
 Before publishing, run:
 
