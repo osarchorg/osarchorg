@@ -154,6 +154,7 @@ name in the post front matter.
 - acadrust
 - Archipack
 - BabylonJS
+- BIMCraft
 - Bonsai
 - BRL-CAD
 - CAD Sketcher

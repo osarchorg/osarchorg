@@ -12,6 +12,7 @@ Review each post and set its publication date when approving it for publication.
 | OpenSeesPy framework compares concrete frame retrofit strategies | [Read draft](content/posts/2026-10-20-openseespy-concrete-frame-optimizer.md) |
 | acadrust provides DWG and DXF file handling in Rust | [Read draft](content/posts/2026-10-20-acadrust-dwg-dxf-library.md) |
 | IFCCAD explores an open drawing format built on IFCX | [Read draft](content/posts/2026-10-25-ifccad-open-cad-drawing-format.md) |
+| BIMCraft develops a Rust BIM authoring application with IFC exchange | [Read draft](content/posts/2026-10-30-bimcraft-rust-bim-authoring.md) |
 
 ## Next newsletter
 
