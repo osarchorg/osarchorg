@@ -1,0 +1,4 @@
+# Shared newsletter checkpoint. Update only after an issue has actually been sent.
+# This is the newest post included in the last issue, not the email's send date.
+last_included_post = "content/posts/2026-07-11-freecad-q2-2026-grants-announced.md"
+posts_per_issue = 10

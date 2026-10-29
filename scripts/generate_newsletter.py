@@ -7,6 +7,7 @@ import argparse
 import html
 import re
 import textwrap
+import tomllib
 from dataclasses import dataclass
 from datetime import datetime, timezone
 from pathlib import Path
@@ -32,6 +33,11 @@ class Page:
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
         description="Generate OSArch newsletter HTML and plaintext files."
+    )
+    parser.add_argument(
+        "--status",
+        action="store_true",
+        help="show posts since the last sent newsletter without generating files",
     )
     parser.add_argument(
         "-n",
@@ -185,6 +191,33 @@ def latest_posts(root: Path, count: int) -> list[Page]:
     posts = load_pages(root / "content" / "posts")
     posts.sort(key=lambda page: parse_dt(page.data.get("date")), reverse=True)
     return posts[:count]
+
+
+def print_newsletter_status(root: Path, now: datetime) -> None:
+    state_path = root / "data" / "newsletter.toml"
+    with state_path.open("rb") as stream:
+        state = tomllib.load(stream)
+    cutoff_path = root / state["last_included_post"]
+    cutoff_data, _ = load_front_matter(cutoff_path.read_text(encoding="utf-8"))
+    cutoff = parse_dt(cutoff_data.get("publishDate") or cutoff_data.get("date"))
+    new_posts = [
+        page
+        for page in load_pages(root / "content" / "posts")
+        if cutoff
+        < parse_dt(page.data.get("publishDate") or page.data.get("date"))
+        <= now
+    ]
+    new_posts.sort(key=lambda page: parse_dt(page.data.get("date")))
+    target = state["posts_per_issue"]
+    print(f"Last newsletter included: {cutoff_data['title']}")
+    print(f"Cutoff post: {post_url(cutoff_data)}")
+    print(f"New published posts: {len(new_posts)} / {target} (drafts and future posts excluded)")
+    if len(new_posts) >= target:
+        print("Ready for the next newsletter.")
+    else:
+        print(f"{target - len(new_posts)} more published post(s) until the next newsletter.")
+    for page in new_posts:
+        print(f"  {display_date(parse_dt(page.data.get('date')))}: {page.data['title']}")
 
 
 def upcoming_events(root: Path, today: datetime) -> list[Page]:
@@ -445,6 +478,10 @@ def main() -> int:
     root = Path(__file__).resolve().parents[1]
     today = datetime.now().astimezone()
     stem = f"newsletter-{today.strftime('%Y-%m-%d')}"
+
+    print_newsletter_status(root, today)
+    if args.status:
+        return 0
 
     posts = latest_posts(root, args.news_count)
     events = upcoming_events(root, today)

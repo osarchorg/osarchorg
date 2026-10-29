@@ -212,6 +212,27 @@ hugo --cleanDestinationDir
 
 Check the generated site locally and commit the source files. The generated `public/` directory is build output and should not be committed unless the deployment process explicitly requires it.
 
+## Newsletter Schedule
+
+Send the next newsletter after 10 new published news posts. The shared checkpoint
+is stored in `data/newsletter.toml`. The initial recorded cutoff is **FreeCAD
+announces three grants for Q2 2026** (11 July 2026); the issue's send date is not
+recorded. Consult the checkpoint file for the current cutoff.
+
+Check the count without generating files:
+
+```sh
+python scripts/generate_newsletter.py --status
+```
+
+The generator also prints this status during normal generation. It counts posts
+newer than the checkpoint and excludes drafts and future posts. Normal generation
+still selects the latest 10 news posts; review the selection before sending.
+Generating files does not send a newsletter or advance the checkpoint. After
+sending an issue, update `last_included_post` to the newest post it included and
+commit that change so everyone has the same cutoff. Keep the checkpoint post's
+path current if it is renamed.
+
 ## Social Posting
 
 Use `scripts/post_social.py` after a post is written and its cover image exists.
