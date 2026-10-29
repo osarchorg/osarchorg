@@ -12,6 +12,7 @@ from dataclasses import dataclass
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
+from zoneinfo import ZoneInfo
 
 try:
     import yaml
@@ -126,7 +127,7 @@ def load_pages(directory: Path) -> list[Page]:
     return pages
 
 
-def parse_dt(value: Any) -> datetime:
+def parse_dt(value: Any, default_timezone=timezone.utc) -> datetime:
     if isinstance(value, datetime):
         dt = value
     elif not value:
@@ -139,7 +140,7 @@ def parse_dt(value: Any) -> datetime:
             dt = datetime.strptime(str(value), "%Y-%m-%d %H:%M:%S")
 
     if dt.tzinfo is None:
-        return dt.replace(tzinfo=timezone.utc)
+        return dt.replace(tzinfo=default_timezone)
     return dt
 
 
@@ -197,17 +198,21 @@ def print_newsletter_status(root: Path, now: datetime) -> None:
     state_path = root / "data" / "newsletter.toml"
     with state_path.open("rb") as stream:
         state = tomllib.load(stream)
+    with (root / "hugo.toml").open("rb") as stream:
+        site_timezone = ZoneInfo(tomllib.load(stream).get("timeZone", "UTC"))
+
+    def published_at(data: dict[str, Any]) -> datetime:
+        return parse_dt(data.get("publishDate") or data.get("date"), site_timezone)
+
     cutoff_path = root / state["last_included_post"]
     cutoff_data, _ = load_front_matter(cutoff_path.read_text(encoding="utf-8"))
-    cutoff = parse_dt(cutoff_data.get("publishDate") or cutoff_data.get("date"))
+    cutoff = published_at(cutoff_data)
     new_posts = [
         page
         for page in load_pages(root / "content" / "posts")
-        if cutoff
-        < parse_dt(page.data.get("publishDate") or page.data.get("date"))
-        <= now
+        if cutoff < published_at(page.data) <= now
     ]
-    new_posts.sort(key=lambda page: parse_dt(page.data.get("date")))
+    new_posts.sort(key=lambda page: published_at(page.data))
     target = state["posts_per_issue"]
     print(f"Last newsletter included: {cutoff_data['title']}")
     print(f"Cutoff post: {post_url(cutoff_data)}")
