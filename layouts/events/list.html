@@ -1,7 +1,13 @@
 {{ define "main" }}
 {{- $events := sort .Pages "Params.event_start_utc" "asc" -}}
 {{- $now := now.UTC.Format "2006-01-02T15:04:05Z07:00" -}}
-{{- $upcoming := where $events "Params.event_end_utc" "ge" $now -}}
+{{- $upcoming := slice -}}
+{{- range $events -}}
+  {{- $last := .Params.event_end_utc | default .Params.event_start_utc -}}
+  {{- if ge $last $now -}}
+    {{- $upcoming = $upcoming | append . -}}
+  {{- end -}}
+{{- end -}}
 
 <header class="page-header events-header">
   <h1>{{ .Title }}</h1>

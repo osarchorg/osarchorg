@@ -1,5 +1,5 @@
 {{- $start := time.AsTime .Params.event_start -}}
-{{- $end := time.AsTime .Params.event_end -}}
+{{- $end := time.AsTime (.Params.event_end | default .Params.event_start) -}}
 <li class="event-item">
   <time class="event-date" datetime="{{ .Params.event_start }}">
     <span>{{ $start.Format "2" }}</span>
@@ -11,7 +11,7 @@
       {{ if .Params.all_day }}
         All day {{ .Params.timezone }}
       {{ else }}
-        {{ $start.Format "15:04" }}-{{ $end.Format "15:04" }} {{ .Params.timezone }}
+        {{ $start.Format "15:04" }}{{ with .Params.event_end }}-{{ $end.Format "15:04" }}{{ end }} {{ .Params.timezone }}
       {{ end }}
       {{ with .Params.event_url }} · <a href="{{ . }}">Event website</a>{{ end }}
     </p>

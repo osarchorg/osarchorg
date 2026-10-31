@@ -1,6 +1,6 @@
 {{ define "main" }}
 {{- $start := time.AsTime .Params.event_start -}}
-{{- $end := time.AsTime .Params.event_end -}}
+{{- $end := time.AsTime (.Params.event_end | default .Params.event_start) -}}
 <article class="post-single event-single">
   <header class="post-header">
     <h1 class="post-title">{{ .Title }}</h1>
@@ -17,7 +17,7 @@
       {{ if not .Params.all_day }}
       <div>
         <dt>Time</dt>
-        <dd>{{ $start.Format "15:04" }}-{{ $end.Format "15:04" }} {{ .Params.timezone }}</dd>
+        <dd>{{ $start.Format "15:04" }}{{ with .Params.event_end }}-{{ $end.Format "15:04" }}{{ end }} {{ .Params.timezone }}</dd>
       </div>
       {{ else }}
       <div>
