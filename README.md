@@ -178,6 +178,7 @@ name in the post front matter.
 - Ladybug Tools
 - LibreCAD
 - LibreDWG
+- Ondsel Lens
 - OpenAEC
 - Open CAD Studio
 - Open Planner Studio
