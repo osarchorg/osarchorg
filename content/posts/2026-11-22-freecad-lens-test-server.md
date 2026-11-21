@@ -1,8 +1,9 @@
 ---
 title: "FreeCAD opens a Lens test server for project collaboration"
-date: "2026-11-03 00:00:00"
+date: "2026-11-22 09:12:46"
+lastmod: "2026-11-22 09:12:46"
 slug: "freecad-lens-test-server"
-draft: true
+draft: false
 author: "Moult"
 description: "FreeCAD's Lens test server offers project versioning, team collaboration and model sharing, with an add-on for access from FreeCAD."
 tags: ["FreeCAD", "Ondsel Lens", "Architecture", "Construction"]

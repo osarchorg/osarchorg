@@ -1,6 +1,6 @@
 # News publishing queue
 
-Last reviewed: 3 November 2026. These posts are drafts, not scheduled publications.
+Last reviewed: 22 November 2026. These posts are drafts, not scheduled publications.
 The order below follows their draft dates and does not set a publishing priority.
 Review each post and set its publication date when approving it for publication.
 
@@ -13,14 +13,13 @@ Review each post and set its publication date when approving it for publication.
 | acadrust provides DWG and DXF file handling in Rust | [Read draft](content/posts/2026-10-20-acadrust-dwg-dxf-library.md) |
 | IFCCAD explores an open drawing format built on IFCX | [Read draft](content/posts/2026-10-25-ifccad-open-cad-drawing-format.md) |
 | BIMCraft develops a Rust BIM authoring application with IFC exchange | [Read draft](content/posts/2026-10-30-bimcraft-rust-bim-authoring.md) |
-| FreeCAD opens a Lens test server for project collaboration | [Read draft](content/posts/2026-11-03-freecad-lens-test-server.md) |
 | FreeCAD BIM meetups open development discussions to the community | [Read draft](content/posts/2026-11-03-freecad-bim-meetups.md) |
 
 ## Next newsletter
 
-**8 of 10 new posts published. Send the next newsletter after any 2 more news
-posts are published.** Drafts do not count, and the newsletter does not depend on
-which two posts are selected from the queue.
+**9 of 10 new posts published. Send the next newsletter after any 1 more news
+post is published.** Drafts do not count, and the newsletter does not depend on
+which post is selected from the queue.
 
 The last issue included [FreeCAD announces three grants for Q2 2026](content/posts/2026-07-11-freecad-q2-2026-grants-announced.md)
 (11 July 2026). The shared cutoff and ten-post target live in
