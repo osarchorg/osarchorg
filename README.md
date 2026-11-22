@@ -199,6 +199,7 @@ name in the post front matter.
 - Tissue
 - Topologic
 - VI-Suite
+- Wanderer CAD
 - Xeokit
 
 ### Discipline Tags
