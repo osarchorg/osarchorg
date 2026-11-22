@@ -15,6 +15,7 @@ Review each post and set its publication date when approving it for publication.
 | BIMCraft develops a Rust BIM authoring application with IFC exchange | [Read draft](content/posts/2026-10-30-bimcraft-rust-bim-authoring.md) |
 | FreeCAD BIM meetups open development discussions to the community | [Read draft](content/posts/2026-11-03-freecad-bim-meetups.md) |
 | Blender 5.3 released with native 3D Gaussian splat support | [Read draft](content/posts/2026-11-23-blender-5-3-released.md) |
+| CreaBIM publishes a GPL-licensed BIM modeller written in Rust with IFC exchange | [Read draft](content/posts/2026-11-23-creabim-rust-bim-modeller.md) |
 
 ## Next newsletter
 

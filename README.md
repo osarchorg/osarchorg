@@ -162,6 +162,7 @@ name in the post front matter.
 - Castle Game Engine
 - CGAL
 - COMPAS
+- CreaBIM
 - dotbim
 - EnergyPlus
 - Blender
