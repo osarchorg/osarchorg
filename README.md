@@ -166,6 +166,7 @@ name in the post front matter.
 - dotbim
 - EnergyPlus
 - Blender
+- F3D
 - FreeCAD
 - GIMP
 - Godot

@@ -17,6 +17,7 @@ Review each post and set its publication date when approving it for publication.
 | Blender 5.3 released with native 3D Gaussian splat support | [Read draft](content/posts/2026-11-23-blender-5-3-released.md) |
 | CreaBIM publishes a GPL-licensed BIM modeller written in Rust with IFC exchange | [Read draft](content/posts/2026-11-23-creabim-rust-bim-modeller.md) |
 | That Open Engine 3.5 and 3.6 add WebGPU rendering, point clouds and Gaussian splats | [Read draft](content/posts/2026-11-23-that-open-engine-3-5-3-6-webgpu-reality-capture.md) |
+| F3D 4.0 viewer adds support for FreeCAD files | [Read draft](content/posts/2026-11-23-f3d-4-0-freecad-file-support.md) |
 
 ## Next newsletter
 
