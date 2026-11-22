@@ -1,6 +1,6 @@
 # News publishing queue
 
-Last reviewed: 22 November 2026. These posts are drafts, not scheduled publications.
+Last reviewed: 23 November 2026. These posts are drafts, not scheduled publications.
 The order below follows their draft dates and does not set a publishing priority.
 Review each post and set its publication date when approving it for publication.
 
@@ -14,6 +14,7 @@ Review each post and set its publication date when approving it for publication.
 | IFCCAD explores an open drawing format built on IFCX | [Read draft](content/posts/2026-10-25-ifccad-open-cad-drawing-format.md) |
 | BIMCraft develops a Rust BIM authoring application with IFC exchange | [Read draft](content/posts/2026-10-30-bimcraft-rust-bim-authoring.md) |
 | FreeCAD BIM meetups open development discussions to the community | [Read draft](content/posts/2026-11-03-freecad-bim-meetups.md) |
+| Blender 5.3 released with native 3D Gaussian splat support | [Read draft](content/posts/2026-11-23-blender-5-3-released.md) |
 
 ## Next newsletter
 
