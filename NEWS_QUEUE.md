@@ -1,12 +1,11 @@
 # News publishing queue
 
-Last reviewed: 23 November 2026. These posts are drafts, not scheduled publications.
+Last reviewed: 26 November 2026. These posts are drafts, not scheduled publications.
 The order below follows their draft dates and does not set a publishing priority.
 Review each post and set its publication date when approving it for publication.
 
 | Draft | Source |
 | --- | --- |
-| FreeCAD now runs in the browser through WebAssembly | [Read draft](content/posts/2026-07-27-freecad-webassembly-browser-port.md) |
 | TopologicPy adds space syntax analysis in Python | [Read draft](content/posts/2026-10-20-topologicpy-space-syntax.md) |
 | OpenSKP brings SketchUp import and export to Blender | [Read draft](content/posts/2026-10-20-blender-openskp.md) |
 | OpenSeesPy framework compares concrete frame retrofit strategies | [Read draft](content/posts/2026-10-20-openseespy-concrete-frame-optimizer.md) |
@@ -22,9 +21,8 @@ Review each post and set its publication date when approving it for publication.
 
 ## Next newsletter
 
-**9 of 10 new posts published. Send the next newsletter after any 1 more news
-post is published.** Drafts do not count, and the newsletter does not depend on
-which post is selected from the queue.
+**10 of 10 new posts published. The next newsletter is ready to send.** Drafts
+do not count.
 
 The last issue included [FreeCAD announces three grants for Q2 2026](content/posts/2026-07-11-freecad-q2-2026-grants-announced.md)
 (11 July 2026). The shared cutoff and ten-post target live in

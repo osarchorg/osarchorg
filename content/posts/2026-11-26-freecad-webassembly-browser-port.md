@@ -1,9 +1,9 @@
 ---
 title: "FreeCAD now runs in the browser through WebAssembly"
-date: "2026-07-27 18:14:48"
-lastmod: "2026-07-27 18:14:48"
+date: "2026-11-26 09:08:23"
+lastmod: "2026-11-26 09:08:23"
 slug: "freecad-webassembly-browser-port"
-draft: true
+draft: false
 author: "Moult"
 description: "A WebAssembly port runs the FreeCAD desktop application in recent Chromium-based browsers, including its modelling workbenches, Python console, and local file handling."
 tags: ["FreeCAD", "Architecture", "Construction"]
